@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper listed in preferred-citation."
+title: "T-SNOT: S-NOT and S-DON for 3D lug and dog-bone plasticity"
+type: software
+license: MIT
+repository-code: "https://github.com/ncsa/T-SNOT"
+authors:
+  - family-names: Park
+    given-names: Jaewan
+  - family-names: Kobayashi
+    given-names: Kazuma
+  - family-names: Liu
+    given-names: Qibang
+  - family-names: Koric
+    given-names: Amar Alem
+  - family-names: Abueidda
+    given-names: Diab W.
+  - family-names: Alam
+    given-names: Syed Bahauddin
+  - family-names: Koric
+    given-names: Seid
+preferred-citation:
+  type: article
+  title: "Sequential deep operator neural networks for plastic and thermo-viscoplastic transient material behavior"
+  authors:
+    - family-names: Park
+      given-names: Jaewan
+    - family-names: Kobayashi
+      given-names: Kazuma
+    - family-names: Liu
+      given-names: Qibang
+    - family-names: Koric
+      given-names: Amar Alem
+    - family-names: Abueidda
+      given-names: Diab W.
+    - family-names: Alam
+      given-names: Syed Bahauddin
+    - family-names: Koric
+      given-names: Seid
+  journal: International Journal of Plasticity
+  volume: "201"
+  start: "104689"
+  year: 2026
+  doi: "10.1016/j.ijplas.2026.104689"
+  url: "https://doi.org/10.1016/j.ijplas.2026.104689"

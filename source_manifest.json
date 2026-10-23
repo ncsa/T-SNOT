@@ -1,0 +1,52 @@
+[
+  {
+    "path": "snot/lug3d/train.py",
+    "source_filename": "s_not_lug3d_nsteps_gru.py",
+    "original_sha256": "1b896d5a2af32db7ed60fc0b64c882892f97c8ef08f4c6238760920bd6cf51c2"
+  },
+  {
+    "path": "snot/dogbone/train.py",
+    "source_filename": "s_not_dog_bone_nsteps.py",
+    "original_sha256": "71caae5d637fed00b042cf2fbab9151143c94e0884a3edea97071c1170578c62"
+  },
+  {
+    "path": "sdon/lug3d/train.py",
+    "source_filename": "test_3d_steps_lug_MAE.py",
+    "original_sha256": "dc0a0d24df49f38ebb1feb5192778d51d2bca9b31ab288a04e522897ceb1a12a"
+  },
+  {
+    "path": "sdon/dogbone/train.py",
+    "source_filename": "DeepXDE_GRU_vector.py",
+    "original_sha256": "0dc03bbd7e318255c57e00a890244608272f904f4f905ee757588f5cc91e0932"
+  },
+  {
+    "path": "snot/modules/transformer.py",
+    "source_filename": "transformer.py",
+    "original_sha256": "046dc7a26925a6336c32f075eff614dbac42ea9c818c81ca2c77bc052908e6a6",
+    "copied_verbatim": true
+  },
+  {
+    "path": "snot/modules/point_position_embedding.py",
+    "source_filename": "point_position_embedding.py",
+    "original_sha256": "47727e2aac2f74f2de626f35b4610bc04b1ff91cd203c67c32921b88e9e0aa1a",
+    "copied_verbatim": true
+  },
+  {
+    "path": "snot/trainer/torch_trainer.py",
+    "source_filename": "torch_trainer.py",
+    "original_sha256": "3bbe1cc5e36a8729ed2a72ae3fe6557e498147fa396149d04d2d15be6cad701d",
+    "copied_verbatim": true
+  },
+  {
+    "path": "snot/trainer/__init__.py",
+    "source_filename": "__init__.py",
+    "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "copied_verbatim": true
+  },
+  {
+    "path": "data/dogbone/TrainIndex.npy",
+    "source_filename": "TrainIndex.npy",
+    "original_sha256": "cbeaa37a478128a3b2a725b25c4766278853c8e21a6628e93772de4c43bbb170",
+    "copied_verbatim": true
+  }
+]

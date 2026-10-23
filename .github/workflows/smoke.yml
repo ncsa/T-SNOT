@@ -1,0 +1,39 @@
+name: Training smoke checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        model: [snot, sdon]
+        case: [lug3d, dogbone]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: pip
+          cache-dependency-path: requirements-${{ matrix.model }}.txt
+      - name: Install CPU PyTorch
+        if: matrix.model == 'snot'
+        run: python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+      - name: Install experiment requirements
+        run: python -m pip install -r requirements-${{ matrix.model }}.txt
+      - name: Check help and import safety
+        run: |
+          python -m ${{ matrix.model }}.${{ matrix.case }}.train --help
+          python -c 'import importlib; importlib.import_module("${{ matrix.model }}.${{ matrix.case }}.train")'
+      - name: Train on synthetic data and check saved outputs
+        run: python scripts/smoke_test.py --model ${{ matrix.model }} --case ${{ matrix.case }}
+      - name: Check preprocessing independence from held-out targets
+        run: python scripts/check_preprocessing.py --model ${{ matrix.model }} --case ${{ matrix.case }}
